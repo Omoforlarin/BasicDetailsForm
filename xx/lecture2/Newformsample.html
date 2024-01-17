@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Form</title>
+    <link rel="stylesheet" href="Sampleform.css">
+</head>
+
+<body>
+  <form action="action.php" method="post">
+
+    <h1>My Form</h1>  
+  <fieldset>
+  <p></p>
+  <legend>Basic Details</legend>
+
+  <label for="Sname">Surname:</label>
+  <input type="text" id="Sname" name="Sname" placeholder="Surname" maxlength="10">
+  <p></p>
+  <label for="Age">Age:</label>
+  <input type="number" id="Age" name="Age" max="40" min="20" > 
+  <br>
+  <p></p>
+  <label for="Lname">Lastname:</label>
+  <input type="text" name="Lname" id="Lname" placeholder="Lastname" disabled >
+  <p></p>
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" required >
+<p></p>
+<label for="Sex">Sex:</label> 
+<br>
+<input type="checkbox" name="female" id="female" value="female" checked>
+<label for="female">female</label> <br>
+<input type="checkbox" name="male" id="male" value="male" unchecked>
+<label for="male">male</label>
+<p></p>
+<label for="Email"> Type your Email:</label>
+<input type="=Email" name="Email" id="Email" value="oluwatobilosilagun@gmail.com" disabled>
+  </fieldset><br>
+
+<fieldset>
+<legend>choose your browser</legend>
+<!-- <p>choose your browser</p> -->
+
+<input type="radio" name="browser" id="opera" value="opera" checked>
+<label for="opera">Opera Mini</label> <br>
+<input type="radio" name="browser" id="chrome" value="chrome" >
+<label for="chrome">Chrome</label>
+</fieldset><br>
+<fieldset>
+    <legend>Means of Identification</legend>
+    <!--<p>choose your means of ID</p -->
+    <input type="checkbox" name="Voters card" id="Voters card" value=" Voters card" checked>
+    <label for="Voters card">Voters Card</label> <br>
+    <input type="checkbox" name="Drivers License" id="Drivers License" value="Drivers License" unchecked>
+    <label for="Drivers License">Drivers License</label> <br>
+    <input type="checkbox" name="LASSRA" id="LASSRA" value="LASSRA" checked>
+    <label for="LASSRA">LASSRA</label>
+</fieldset> 
+<p></p>
+
+<fieldset>
+<legend>Languages</legend>
+  <label for="Languages">Select Languages</label>
+<select id="Languages" name="Languages">
+<option value="ENGLISH" selected> ENGLISH</option>
+<option value="YORUBA">YORUBA</option>
+<option value="HAUSA">HAUSA</option>
+<option value="IGBO">IGBO</option>
+ </select>
+</fieldset>
+
+ <p></p>
+<label for="Remark">Remarks: </label>
+<textarea id="Remark" row="5" cols="25"></textarea>
+<p></p>
+<label for="Picture"> Upload your Picture </label>
+<input type="file" name="picture" id="picture">
+<p></p>
+<input type="submit" value="Submit form">
+
+  </form>
+  
+
+
+
+
+</body>
+</html>
